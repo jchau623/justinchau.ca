@@ -1,0 +1,54 @@
+/* === IMPORTS === */
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto:400,700|Raleway:500|Oswald:300,400');
+
+/* === ID SELECTORS === */
+#splash-bg {
+    background-color: #0E6EB8;
+}
+
+/* === CLASSES === */
+.full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-photo {
+    border-right: white solid thin;
+    text-align: right !important;
+}
+
+/* = VUE OVERRIDES = */
+.ui.header {
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Raleway', sans-serif;*/
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px #000;
+}
+
+.ui.header.links {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.ui.header#name {
+    line-height: 1em;
+}
+
+.ui.header.bigName {
+    font-size: 5.5em;
+}
+
+.ui.header.links {
+    padding-top: 10.5vh;
+    font-size: 3em;
+}
+
+.ui {
+    color: white !important;
+}
+
+/* === GLOBAL TAG CSS === */
+
