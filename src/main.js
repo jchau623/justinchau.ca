@@ -6,6 +6,8 @@ import './app.css'
 import semantic from 'semantic'
 import Splash from './Vues/Splash'
 import $ from 'jQuery'
+import 'semantic-ui-transition/transition.css'
+$.fn.transition = require('semantic-ui-transition')
 
 /* eslint-disable no-new */
 new Vue({
@@ -16,5 +18,15 @@ new Vue({
 })
 
 $(document).ready(function () {
-  $('.headplate').transition('scale')
+  setTimeout(function () {
+    $('.headplate').transition({
+      animation: 'scale',
+      onComplete: function () {
+        $('.links').transition({
+          animation: 'fade up',
+          duration: '850ms'
+        })
+      }
+    })
+  }, 500)
 })

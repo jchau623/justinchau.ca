@@ -1,5 +1,5 @@
 <template>
-  <div id='splash-bg' class=' full-screen'>
+  <div class='ui very padded right aligned container'>
     <titlesplash></titlesplash>
     <links></links>
   </div>

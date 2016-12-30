@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto:400,700|Raleway:500|Oswald:300,400');
 
 /* === ID SELECTORS === */
-#splash-bg {
-    background-color: #0E6EB8;
-}
 
 /* === CLASSES === */
 .full-screen {
@@ -40,7 +37,10 @@
     padding-top: 10.5vh;
     font-size: 3em;
     min-width: 475px;
-    visibility: hidden
+    visibility: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 
 .ui.header#name {
@@ -56,4 +56,6 @@
 }
 
 /* === GLOBAL TAG CSS === */
-
+body {
+    background-color: #0E6EB8;
+}
