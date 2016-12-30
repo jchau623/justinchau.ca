@@ -5,11 +5,16 @@ import '../node_modules/semantic-ui-css/semantic.min.css'
 import './app.css'
 import semantic from 'semantic'
 import Splash from './Vues/Splash'
-/* eslint-disable no-new */
+import $ from 'jQuery'
 
+/* eslint-disable no-new */
 new Vue({
   el: '#splash',
   render: h => h(Splash),
   template: '<Splash/>',
   components: { Splash }
+})
+
+$(document).ready(function () {
+  $('.headplate').transition('scale')
 })

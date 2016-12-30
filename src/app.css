@@ -17,6 +17,12 @@
     text-align: right !important;
 }
 
+.headplate {
+    padding-top: 10.5vh;
+    min-width: 534px;
+    visibility: hidden
+}
+
 /* = VUE OVERRIDES = */
 .ui.header {
     /*font-family: 'Roboto', sans-serif;*/
@@ -31,6 +37,10 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 0px;
+    padding-top: 10.5vh;
+    font-size: 3em;
+    min-width: 475px;
+    visibility: hidden
 }
 
 .ui.header#name {
@@ -39,11 +49,6 @@
 
 .ui.header.bigName {
     font-size: 5.5em;
-}
-
-.ui.header.links {
-    padding-top: 10.5vh;
-    font-size: 3em;
 }
 
 .ui {
