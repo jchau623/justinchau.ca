@@ -24,10 +24,13 @@ $(document).ready(function () {
     $('.headplate').transition({
       animation: 'scale',
       onComplete: function () {
-        $('.links').transition({
-          animation: 'fade up',
-          duration: '850ms'
-        })
+        setTimeout(function () {
+          $('.links').transition({
+            animation: 'fade up',
+            useFailSafe: false,
+            duration: '1.5s'
+          })
+        }, 500)
       }
     })
   }, 500)
